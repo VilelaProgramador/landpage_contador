@@ -1,0 +1,24 @@
+{
+  "name": "landpage-contador",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VilelaProgramador/landpage_contador.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VilelaProgramador/landpage_contador/issues"
+  },
+  "homepage": "https://github.com/VilelaProgramador/landpage_contador#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
