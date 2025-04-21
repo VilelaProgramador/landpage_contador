@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    color: #ffffff;
+    padding: 10px 0;
+    z-index: 1000;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.9;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+  
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+  
+header a:hover {
+    transform: scale(1.1); 
+    font-size: 19px; 
+}
+
+body {
+    padding-top: 80px; 
+    background-color: #000;
+}
+
+.home-section {
+    padding: 60px 20px;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-section__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: papayawhip;
+    font-size: 28px;
+}
+
+.home-section__title {
+    font-size: 2rem;
+    color: #5f0483;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.home-section__description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: papeyawhip;
+    text-align: center;
+    
+}
+
+.home-section__contador {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.contador__item {
+    background-color: papayawhip;
+    border: 2px solid #5f0483;
+    border-radius: 10px;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+}
+
+.contador__item h3 {
+    font-size: 2rem;
+    margin: 0;
+    color: #5f0483;
+    font-family: 'Courier New', monospace;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+
+.contador__item p {
+    margin: 0;
+    font-weight: bold;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .contador__item h3 {
+        font-size: 1.5rem;
+    }
+}
+  
+.video-section {
+    padding: 60px 20px;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.video-section__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    background: papayawhip;
+    border-radius: 12px;
+}
+  
+.video-section__video, .sobre-mim__video {
+    flex: 1 1 500px;
+    max-width: 300px;
+    margin: 20px 20px;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+  
+.video-section__video:hover, .sobre-mim__video:hover {
+    transform: scale(1.02);
+}
+
+.video-section__video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+  
+.video-section__text {
+    flex: 1 1 400px;
+    color: #000;
+    max-width: 600px;
+}
+  
+.video-section__text h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #5f0483;
+}
+  
+.video-section__text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+  
+  @media (max-width: 768px) {
+    .video-section__container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .video-section__text,
+    .video-section__video {
+      max-width: 100%;
+    }
+}
+
+.sobre-mim {
+    padding: 60px 20px;
+    background-color: #000;
+}
+  
+.sobre-mim__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background: papayawhip;
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+  
+  .sobre-mim__text {
+    flex: 1 1 400px;
+    max-width: 600px;
+    color: #000;
+  }
+  
+  .sobre-mim__h2 {
+    font-size: 28px;
+    color: #5f0483;
+    margin-bottom: 16px;
+    text-align: left;
+}
+  
+.sobre-mim__p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+  
+.sobre-mim__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+  
+  .sobre-mim__form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #5f0483;
+    border-radius: 5px;
+    background-color: white;
+    color: #000;
+  }
+  
+  .sobre-mim__form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5f0483;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .sobre-mim__form button:hover {
+    background-color: #43015e;
+  }
+  
+  .sobre-mim__video {
+    flex: 1 1 500px;
+    max-width: 300px;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sobre-mim__video:hover {
+    transform: scale(1.02);
+  }
+  
+  .sobre-mim__video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .sobre-mim__container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .sobre-mim__text,
+    .sobre-mim__video {
+      max-width: 100%;
+    }
+  
+    .sobre-mim__p {
+      text-align: center;
+    }
+  
+    .sobre-mim__form input,
+    .sobre-mim__form button {
+      width: 100%;
+    }
+  }
+
+footer {
+    background-color: papayawhip;
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
